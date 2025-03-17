@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Title -->
+  <title>Pokedex</title>
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='24px' stroke-width='1.5' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' color='%23000000'%3E%3Cpath d='M3 3.6V20.4C3 20.7314 3.26863 21 3.6 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H3.6C3.26863 3 3 3.26863 3 3.6Z' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M6 6L6 16' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M10 6V9' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M14 6V13' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M18 6V11' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Bulma CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+  />
+
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Custom JS For this Component File -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">
+  Welcome on components page
+</h2>
+
+<p class="has-text-centered column is-full">This page is a collection of components that you can use to build your application. It use <a href="https://bulma.io/documentation/" target="_blank">Bulma CSS</a>, so feel free to adapt it to your needs.
+</p>
+
+<!-- POKEMON CARD -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">
+  Header
+</h2>
+
+<header class="my-5" to-highlight>
+  <h1 class="title has-text-centered is-1">Pokedex</h1>
+  <nav
+    class="navbar is-flex is-justify-content-space-evenly"
+    id="navbar_main"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <a class="navbar-item" id="nav-item-home"> Home </a>
+    <a class="navbar-item" id="nav-item-type"> Types </a>
+    <a class="navbar-item" id="nav-item-team"> Teams </a>
+    <a class="navbar-item" id="nav-item-add-team"> Ajouter une team </a>
+  </nav>
+</header>
+
+<main
+  id="app"
+  class="container is-flex is-align-item-center is-flex-wrap-wrap is-justify-content-space-evenly"
+>
+
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Main Element</h2>
+
+<main
+  id="app"
+  class="container is-flex is-align-item-center is-flex-wrap-wrap is-justify-content-space-evenly"
+  to-highlight
+>
+  <p>Everyting must be placed in this tag.</p>
+</main>
+
+<!-- POKEMON CARD -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">
+  Pokemon Card
+</h2>
+
+
+<div class="card mb-6 has-text-centered pt-4" to-highlight>
+  <a>
+    <div class="card-image">
+      <img class="pkm_img" src="./assets/img/1.webp" />
+    </div>
+    <div class="card-content">
+      <p>Bulbizarre</p>
+    </div>
+  </a>
+</div>
+<!-- / POKEMON CARD -->
+
+
+<!-- TYPES LIST -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Types</h2>
+
+<div class="is-flex is-justify-content-center" to-highlight>
+  <button class="button is-flex-grow-1 mx-2" style="background-color: #ff4422;">Feu</button>
+  <button class="button is-flex-grow-1 mx-2" style="background-color: #3399ff;">Eau</button>
+  <button class="button is-flex-grow-1 mx-2" style="background-color: #77cc55;">Plante</button>
+  <button class="button is-flex-grow-1 mx-2" style="background-color: #ffbb33;">Electrik</button>
+  <button class="button is-flex-grow-1 mx-2" style="background-color: #aa5599;">Poison</button>
+</div>
+<!-- / TYPES LIST -->
+
+<!-- GROUP COMPONENTS -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Group Components</h2>
+<p class="has-text-centered column is-full">Wrap components in <code>is-flex</code> class.</p>
+
+<div to-highlight>
+  <div class="is-flex is-justify-content-center">
+    <div class="card mb-6 has-text-centered pt-4 mx-2">
+      <a>
+        <div class="card-image is-flex is-justify-content-center">
+          <img class="pkm_img" src="./assets/img/1.webp" />
+        </div>
+        <div class="card-content">
+          <p>Bulbizarre</p>
+        </div>
+      </a>
+    </div>
+    <div class="card mb-6 has-text-centered pt-4 mx-2">
+      <a>
+        <div class="card-image
+          is-flex is-justify-content-center">
+          <img class="pkm_img" src="./assets/img/1.webp" />
+        </div>
+        <div class="card-content">
+          <p>Bulbizarre</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="is-flex is-justify-content-center">
+    <button class="button is-primary">Action</button>
+  </div>
+</div>
+<!-- / GROUP COMPONENTS -->
+
+<!-- FULL WIDTH ELEMENT -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Full Width Element</h2>
+
+<p>
+  Add <code>column is-full</code> classes to make an element full width in a flex container.
+</p>
+<div class="is-flex is-justify-content-center is-flex-wrap-wrap is-full column" to-highlight>
+  <div class="column is-full has-background-info has-text-black">
+    I'm a full width
+  </div>
+  <div class="column has-background-danger has-text-black">
+    I'm not
+  </div>
+  <div class="column has-background-warning has-text-black">
+    I'm not too
+  </div>
+</div>
+
+
+<!-- POKEMON DETAILS MODAL -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Pokemon Details Modal</h2>
+
+<div class="is-flex is-justify-content-center" to-highlight>
+    <button class="button is-primary" id="open_pkm_detail_exemple">
+      Open Pokemon Detail
+    </button>
+
+  <div class="modal" id="pkm_detail">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <h2 class="modal-card-title pkm_name">Bulbizarre</h2>
+        <i class="fa fa-window-close close"></i>
+      </header>
+      <section
+        class="modal-card-body is-flex is-flex-direction-row is-align-content-center is-align-items-center"
+      >
+        <div class="mr-4">
+          <img src="./assets/img/1.webp" class="pkm_img_modal" />
+        </div>
+        <div class="modal-card-content pkm_stats_modal">
+          <h4 class="mb-4">Statistiques</h4>
+          <p class="modal_team_types"></p>
+          <div>
+            <div class="is-flex is-justify-content-space-start">
+              <div class="">PV:</div>
+              <div class="pokemon-hp ml-1"></div>
+            </div>
+            <progress
+              class="progress is-danger"
+              value="50"
+              max="255"
+            ></progress>
+          </div>
+          <div class="row">
+            <div class="is-flex is-justify-content-space-start">
+              <div class="">Attaque:</div>
+              <div class="pokemon-atk ml-1"></div>
+            </div>
+            <progress
+              class="progress is-danger"
+              value="70"
+              max="255"
+            ></progress>
+          </div>
+          <div class="row">
+            <div class="is-flex is-justify-content-space-start">
+              <div class="">Défense:</div>
+              <div class="pokemon-def ml-1"></div>
+            </div>
+            <progress
+              class="progress is-danger"
+              value="90"
+              max="255"
+            ></progress>
+          </div>
+          <div class="row">
+            <div class="is-flex is-justify-content-space-start">
+              <div class="">Attaque Spé:</div>
+              <div class="pokemon-atk_spe ml-1"></div>
+            </div>
+            <progress
+              class="progress is-danger"
+              value="110"
+              max="255"
+            ></progress>
+          </div>
+          <div class="row">
+            <div class="is-flex is-justify-content-space-start">
+              <div class="">Défense Spé:</div>
+              <div class="pokemon-def_spe ml-1"></div>
+            </div>
+            <progress
+              class="progress is-danger"
+              value="130"
+              max="255"
+            ></progress>
+          </div>
+          <div class="row">
+            <div class="is-flex is-justify-content-space-start">
+              <div class="">Vitesse:</div>
+              <div class="pokemon-speed ml-1"></div>
+            </div>
+            <progress
+              class="progress is-danger"
+              value="150"
+              max="255"
+            ></progress>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot is-flex">
+        <div class="add_team_container">
+          <form id="form_add_pkm_team">
+            <select class="select">
+              <option value="1">Team 1</option>
+              <option value="2">Team 2</option>
+              <option value="3">Team 3</option>
+            </select>
+            <button class="button btn_add_team">Ajouter à une team</button>
+          </form>
+        </div>
+        <div class="buttons">
+          <button class="button close">Retour</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Sample code, do not use as it is, adapt it to your needs
+    const pokemonModal = document.getElementById("pkm_detail");
+    const openPkmDetail = document.getElementById("open_pkm_detail_exemple");
+    const closePkmDetail = document.querySelector("#pkm_detail .close");
+    openPkmDetail.addEventListener("click", () => {
+      pokemonModal.classList.add("is-active");
+    });
+    closePkmDetail.addEventListener("click", () => {
+      pokemonModal.classList.remove("is-active");
+    });
+  </script>
+</div>
+<!-- / POKEMON DETAILS MODAL -->
+
+<!-- TEAM DETAILS MODAL -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Team Details Modal</h2>
+
+<div class="is-flex is-justify-content-center" to-highlight>
+  <button class="button is-primary" id="open_team_detail_exemple">
+    Open Team Details
+  </button>
+
+  <div class="modal" id="team_modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <header class="modal-card-head">
+        <h2 class="modal-card-title team_name"></h2>
+        <form class="hidden">
+          <input
+            type="text"
+            name="team_name"
+            class="modal-card-title input_team_name mr-3"
+          />
+        </form>
+        <i class="fa fa-pencil edit mr-3"></i>
+        <i class="fa fa-window-close close"></i>
+      </header>
+      <div class="modal-card-body">
+        <p class="team_description"></p>
+        <table class="table has-text-centered">
+          <thead>
+            <tr>
+              <th><abbr title="numero">N°</abbr></th>
+              <th><abbr title="name">Name</abbr></th>
+              <th><abbr title="hp">PV</abbr></th>
+              <th><abbr title="atk">Atk</abbr></th>
+              <th><abbr title="def">Def</abbr></th>
+              <th><abbr title="atk_spe">Atk Spe</abbr></th>
+              <th><abbr title="def_spe">Def Spe</abbr></th>
+              <th><abbr title="speed">Vit</abbr></th>
+              <th><abbr title="types">Types</abbr></th>
+              <th><abbr title="options">Options</abbr></th>
+            </tr>
+          </thead>
+          <tbody id="tbody_team">
+            <!-- TODO: A dynamiser -->
+            <tr>
+              <td>1</td>
+              <td>Builbizarre</td>
+              <td>100</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td><i class="fa fa-trash"></i></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Salamèche</td>
+              <td>100</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td><i class="fa fa-trash"></i></td>
+            </tr>
+            <!-- END A dynamiser  -->
+          </tbody>
+        </table>
+      </div>
+      <footer class="modal-card-foot">
+        <div class="buttons">
+          <button class="button close">Retour</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Sample code, do not use as it is, adapt it to your needs
+    const teamModal = document.getElementById("team_modal");
+    const openTeamDetail = document.getElementById("open_team_detail_exemple");
+    const closeTeamDetail = document.querySelector("#team_modal .close");
+    openTeamDetail.addEventListener("click", () => {
+      teamModal.classList.add("is-active");
+    });
+    closeTeamDetail.addEventListener("click", () => {
+      teamModal.classList.remove("is-active");
+    });
+  </script>
+</div>
+
+<!-- / TEAM DETAILS MODAL -->
+
+<!-- TEAM ITEM -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Team Item</h2>
+
+<section class="container has-text-centered" to-highlight>
+  <div class="mb-1">
+    <h2 class="team-name title">My Great Team</h2>
+    <p class="team-description subtitle my-5">Description of My Great Team</p>
+  </div>
+
+  <div class="imgContainer image is-flex is-justify-content-center my-5">
+    <figure class="image is-64x64 mx-2">
+      <img src="./assets/img/1.webp" class="is-rounded">
+    </figure>
+    <figure class="image is-64x64 mx-2">
+      <img src="./assets/img/2.webp" class="is-rounded">
+    </figure>
+    <figure class="image is-64x64 mx-2">
+      <img src="./assets/img/3.webp" class="is-rounded">
+    </figure>
+    <figure class="image is-64x64 mx-2">
+      <img src="./assets/img/4.webp" class="is-rounded">
+    </figure>
+  </div>
+  <div class="container btnContainer">
+    <button class="button btnModalTeam">Administrer</button>
+  </div>
+</section>
+
+<!-- / TEAM ITEM -->
+
+<!-- ADD TEAM MODAL -->
+<h2 class="title has-text-centered mt-6 mb-6 column is-full has-text-primary">Add Team Modal</h2>
+
+<div class="is-flex is-justify-content-center" to-highlight>
+  <button class="button is-primary" id="open_add_team_modal">
+    Open Add Team Modal
+  </button>
+
+  <div class="modal" id="add_team_modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <header class="modal-card-head">
+        <h2 class="modal-card-title team_name">Ajouter une team</h2>
+        <i class="fa fa-window-close close"></i>
+      </header>
+      <div class="modal-card-body">
+        <form id="form_team_modal">
+          <div class="field">
+            <label class="label">Nom</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="Nom de la team"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Description</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="description"
+                placeholder="Facultatif"
+              />
+            </div>
+          </div>
+          <div class="control">
+            <button class="button is-primary">Enregistrer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sample code, do not use as it is, adapt it to your needs
+    const addTeamModal = document.getElementById("add_team_modal");
+    const openAddTeamModal = document.getElementById("open_add_team_modal");
+    const closeAddTeamModal = document.querySelector("#add_team_modal .close");
+    openAddTeamModal.addEventListener("click", () => {
+      addTeamModal.classList.add("is-active");
+    });
+    closeAddTeamModal.addEventListener("click", () => {
+      addTeamModal.classList.remove("is-active");
+    });
+  </script>
+</div>
+<!-- / ADD TEAM MODAL -->
+
+</main>
+
+<script src="assets/js/components.js"></script>
+</body>
+</html>
