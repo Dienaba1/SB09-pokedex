@@ -60,7 +60,7 @@ Rappel des règles de validation imposées par la roadmap pour `email`, `usernam
 - `username` : entre 3 et 20 caractères, obligatoire, unique, pas de caractères spéciaux
 - `password` : minimum 8 caractères, obligatoire, doit contenir majuscules, minuscules et chiffres
 
-Créez un fichier de validation (par exemple `middlewares/user.middleware.js`), sur le même principe que `team.middleware.js` du Jalon 1 (un schéma de validation + une fonction middleware qui l'applique au `body` de la requête).
+Créez un fichier de validation (par exemple `middlewares/user.middleware.js`) : un schéma de validation + une fonction middleware qui l'applique au `body` de la requête.
 
 > [!TIP]
 > Pour la regex de l'email et celle du mot de passe (majuscule + minuscule + chiffre + 8 caractères mini), n'hésitez pas à demander à une IA de vous générer ces deux expressions régulières avec des exemples de chaînes valides/invalides, pour ensuite les tester et les intégrer à votre schéma de validation.
